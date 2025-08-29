@@ -1,0 +1,268 @@
+.sectionHero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.containerText {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: absolute;
+  bottom: 5%;
+}
+
+.textArea {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  animation: l16 2s ease-in-out;
+}
+
+@keyframes l16 {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.textArea h1 {
+  width: 100%;
+  font-size: 4.7vw;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: black;
+}
+
+.textArea h1 span {
+  font-weight: 900;
+  color: #FF6A00;
+}
+
+.textArea h2 {
+  width: 65%;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+}
+
+.containerCalltoAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.containerCalltoAction .btnContact {
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #FF6A00;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.containerCalltoAction .btnContact .icon {
+  font-size: 1.1rem;
+  transform: rotate(-45deg);
+}
+
+.containerCalltoAction .btnContact:hover {
+  background-color: white;
+  color: #FF6A00;
+}
+
+.containerCalltoAction .links {
+  text-decoration: none;
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.containerCalltoAction .links:hover {
+  background-color: white;
+}
+
+.containerCalltoAction .links:hover .icon {
+  color: #004a9e;
+}
+
+.containerCalltoAction .links .icon {
+  color: #FF6A00;
+  font-size: 1.4rem;
+}
+
+.containerCalltoAction .links:nth-child(2) .icon {
+  font-size: 1.7rem;
+}
+
+@keyframes l18 {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.itemExtra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+  font-family: var(--font-lato);
+}
+
+.itemExtra span {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.itemExtra p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.firstPerson {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.2;
+}
+
+.firstPerson img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .containerText {
+    width: 90%;
+    height: 82vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: auto;
+    top: 110px;
+  }
+
+  .firstPerson {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.2;
+}
+
+.firstPerson img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  .textArea {
+    width: 100%;
+    flex-direction: column;
+    align-items:  flex-start;
+    gap: 10px;
+  }
+
+  .textArea h1 {
+    width: 100%;
+    font-size: 8vw;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+
+  .textArea h1 span {
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .textArea h2 {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .containerCalltoAction {
+    margin-top: 20px;
+  }
+
+  .containerCalltoAction button {
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 0.8rem;
+  }
+
+  .containerCalltoAction button .icon {
+    font-size: 0.9rem;
+  }
+
+
+  .itemExtra {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .itemExtra span {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .itemExtra p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+}

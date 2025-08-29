@@ -1,0 +1,116 @@
+.item {
+  width: 24%;
+  height: 85%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.infoItem h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.iconTwo{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.item:hover {
+  width: 25%;
+}
+
+.item:hover .infoItem {
+  background: linear-gradient(#ff6a0000, #ff6a00);
+}
+
+.item:hover .infoItem h3  {
+  color: white;
+}
+
+.item:hover .infoItem .iconTwo{
+    color: white;
+}
+
+
+
+
+.infoItem button {
+  border: none;
+  background-color: #ff6a00;
+  height: 40px;
+  color: white;
+  padding: 0px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.infoItem button p{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.infoItem button .icon{
+    font-size: 1rem;
+    transform: rotate(-45deg);
+}
+
+
+.item:hover .infoItem  button{
+    background-color: white;
+    color: #ff6a00;
+}   
+
+
+@media (max-width: 850px){
+  .item {
+  width: 100%;
+  height: 50vh;
+}
+
+.item:hover {
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px 50px 0px 0px;
+}
+}
+

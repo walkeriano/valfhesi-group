@@ -1,0 +1,116 @@
+.sectionClients{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sectionClients h2 {
+  width: 80%;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 0.9;
+  color: black;
+  text-align: center;
+}
+
+.sectionClients h2 span {
+  font-weight: 900;
+  color: #ff6a00;
+}
+
+.sectionClients p {
+  width: 65%;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.flexClients{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flexClients img{
+    border-radius: 20px;
+}
+
+.flexBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flexBtn button{
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6a00;
+    border: 2px solid #ff6a00;
+    cursor: pointer;
+}
+
+.flexBtn button .icon{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.flexBtn button:nth-child(1){
+    transform: rotate(180deg);
+}
+
+.flexBtn button:hover{
+    background-color: white;
+}
+
+.flexBtn button:hover .icon{
+    color: #ff6a00;
+}
+
+
+@media (max-width: 850px){
+    .sectionClients{
+    height: 600px;
+}
+
+.sectionClients h2 {
+  font-size: 8.5vw;
+}
+
+.sectionClients p {
+  font-size: 1.5rem;
+}
+
+
+.flexClients{
+    height: 200px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 10%;
+}
+
+.flexClients img{
+    border-radius: 20px;
+    width: 250px;
+    height: 100px;
+}
+}

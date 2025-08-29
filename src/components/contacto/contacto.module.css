@@ -1,0 +1,315 @@
+.containerContact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 80%;
+  height: 65%;
+  background: linear-gradient(#ff7b00, #f6ae00);
+  border-radius: 25px;
+  border: 2px solid #f6ae00;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxImage {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  right: 4%;
+  bottom: 0px;
+}
+
+.boxImage img {
+  object-fit: contain;
+  object-position: right bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.generalContext {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.containerText {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.containerText h3 {
+  width: 100%;
+  font-size: 3.3vw;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 0.9;
+  color: white;
+  text-align: left;
+}
+
+.containerText h3 span {
+  font-weight: 900;
+}
+
+.containerText .p {
+  width: 100%;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+}
+
+.formBox {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.formBox button {
+  height: 40px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.149);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.formBox button p {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.formBox button .icon {
+  color: white;
+  font-size: 1rem;
+}
+
+.formBox button:hover {
+  background-color: white;
+}
+
+.formBox button:hover p,
+.formBox button:hover .icon {
+  color: #ff7b00;
+}
+
+.boxInputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.boxInputs textarea {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.149);
+  border: 1px solid rgba(255, 255, 255, 0.673);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(5px);
+}
+
+.boxInputs textarea::placeholder {
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.boxInputs textarea:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.itemsInputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.itemsInputs label {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.149);
+  border: 1px solid rgba(255, 255, 255, 0.673);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemsInputs label input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: transparent;
+  padding-left: 15px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.itemsInputs label input::placeholder {
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.itemsInputs label .icon {
+  position: absolute;
+  right: 10px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.itemsInputs label:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.containerCalltoAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.containerCalltoAction .btnContact {
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background-color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #ff6a00;
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.containerCalltoAction .btnContact .icon {
+  font-size: 1.1rem;
+  transform: rotate(-45deg);
+}
+
+.containerCalltoAction .btnContact:hover {
+  transform: scale(1.1);
+}
+
+.containerCalltoAction .links {
+  text-decoration: none;
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.containerCalltoAction .links:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.containerCalltoAction .links:hover .icon {
+  color: #ff6a00;
+}
+
+.containerCalltoAction .links .icon {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.containerCalltoAction .links:nth-child(2) .icon {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 850px) {
+  .containerContact {
+    height: 130vh;
+  }
+
+  .generalContext {
+    width: 90%;
+    height: 90%;
+  }
+
+  .containerText {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .containerText h3 {
+    font-size: 6.7vw;
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+
+  .formBox {
+    width: 100%;
+  }
+
+  .boxInputs {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .itemsInputs {
+    width: 80%;
+  }
+
+  .boxInputs textarea {
+    width: 80%;
+    height: 100%;
+  }
+}

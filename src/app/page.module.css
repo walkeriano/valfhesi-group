@@ -1,0 +1,26 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.main .span{
+  background: linear-gradient(#ffffff,#d4d4d4);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: -10;
+}
+
+.containerMain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

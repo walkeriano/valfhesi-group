@@ -1,0 +1,160 @@
+.containerNosotros {
+  background-color: rgba(0, 0, 0, 0.906);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+}
+
+.containerTexto {
+  width: 40%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 2.5%;
+}
+
+.imgBox {
+  position: absolute;
+  left: 6%;
+  bottom: 0px;
+  width: 50%;
+  height: 80%;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+}
+
+.generalInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+}
+
+.generalInfo p {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 100;
+  text-align: right;
+  width: 100%;
+}
+
+.containerCalltoAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCalltoAction .btnContact {
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff6a00;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.containerCalltoAction .btnContact .icon {
+  font-size: 1.1rem;
+  transform: rotate(-45deg);
+}
+
+.containerCalltoAction .btnContact:hover {
+  background-color: white;
+  color: #ff6a00;
+}
+
+.containerCalltoAction .links {
+  text-decoration: none;
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.containerCalltoAction .links:hover {
+  background-color: white;
+}
+
+.containerCalltoAction .links:hover .icon {
+  color: #ff6a00;
+}
+
+.containerCalltoAction .links .icon {
+  color: #ff6a00;
+  font-size: 1.4rem;
+}
+
+.containerCalltoAction .links:nth-child(1) .icon {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 850px) {
+  .containerNosotros {
+    background-color: rgba(0, 0, 0, 0.906);
+    width: 100vw;
+    height: 125vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .imgBox {
+    position: absolute;
+    left: auto;
+    bottom: 0px;
+    width: 100%;
+    height: 55%;
+  }
+
+  .containerTexto {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+  }
+
+  .generalInfo {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.generalInfo p {
+  text-align: center;
+  width: 80%;
+  margin-top: 20px;
+}
+}
