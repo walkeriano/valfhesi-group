@@ -26,10 +26,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          Quesada Coach App - Planes de entrenamiento y nutrición personalizados
-          creados por expertos
-        </title>
+        <title>Valfhesi Group - Asesoría Legal y Consultoría Empresarial</title>
         <meta
           name="description"
           content="Descubre Quesada Coach App, Planes de entrenamiento y nutrición personalizados creados por
@@ -70,11 +67,11 @@ export default function Home() {
         ) : (
           <section className={styles.containerMain}>
             <Hero id="hero" />
-            <Nosotros id="nosotros"/>
-            <Services id="services"/>
-            <Clients/>
+            <Nosotros id="nosotros" />
+            <Services id="services" />
+            <Clients />
             <Contacto id="contacto" />
-            <Footer/>
+            <Footer />
           </section>
         )}
         <span className={styles.span}></span>
