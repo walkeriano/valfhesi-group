@@ -11,30 +11,18 @@ export default function Clients() {
       </h2>
       <p>nacionales e internacionales</p>
       <section className={styles.flexClients}>
-        <Image
-          src="/client-01.png"
-          alt="logo-cliente"
-          width={170}
-          height={80}
-        />
-        <Image
-          src="/client-02.png"
-          alt="logo-cliente"
-          width={170}
-          height={80}
-        />
-        <Image
-          src="/client-03.png"
-          alt="logo-cliente"
-          width={170}
-          height={80}
-        />
-        <Image
-          src="/client-04.png"
-          alt="logo-cliente"
-          width={170}
-          height={80}
-        />
+        <div className={styles.item}>
+          <Image src="/client-01.png" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
+          <Image src="/client-02.png" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
+          <Image src="/client-03.png" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
+          <Image src="/client-04.png" alt="logo-cliente" fill={true} />
+        </div>
       </section>
       <section className={styles.flexBtn}>
         <button>
@@ -44,7 +32,7 @@ export default function Clients() {
             icon={faArrowRight}
           />
         </button>
-         <button>
+        <button>
           <FontAwesomeIcon
             className={styles.icon}
             size="2x"
