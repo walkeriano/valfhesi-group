@@ -38,7 +38,7 @@ export default function Header() {
       <ul className={styles.ulGeneral}>
         <li onClick={() => scrollToSection("hero")}>inicio</li>
         <li onClick={() => scrollToSection("nosotros")}>nosotros</li>
-        <li onClick={() => scrollToSection("servicios")}>servicios</li>
+        <li onClick={() => scrollToSection("services")}>servicios</li>
         <li onClick={() => scrollToSection("contacto")}>contacto</li>
         <div className={styles.flexSocialMedia}>
           <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
@@ -67,7 +67,7 @@ export default function Header() {
           <ul className={styles.ulResponsive}>
             <li onClick={() => scrollToSection("hero")}>inicio</li>
             <li onClick={() => scrollToSection("nosotros")}>nosotros</li>
-            <li onClick={() => scrollToSection("servicios")}>servicios</li>
+            <li onClick={() => scrollToSection("services")}>servicios</li>
             <li onClick={() => scrollToSection("contacto")}>contacto</li>
             <div className={styles.flexSocialMedia}>
               <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>

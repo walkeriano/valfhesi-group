@@ -9,9 +9,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-export default function Nosotros() {
+export default function Nosotros({ id }) {
   return (
-    <section className={styles.containerNosotros}>
+    <section  id={id} className={styles.containerNosotros}>
       <section className={styles.containerTexto}>
         <Image src="log-white.svg" alt="logo-white-version" width={300} height={75} />
         <section className={styles.generalInfo}>

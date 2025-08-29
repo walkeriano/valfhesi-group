@@ -85,7 +85,7 @@ export default function Contacto({ id }) {
   };
 
   return (
-    <section className={styles.containerContact}>
+    <section  id={id} className={styles.containerContact}>
       <section ref={formShow} className={styles.formContainer}>
         <span></span>
         {isSuccess && (
