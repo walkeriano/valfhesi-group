@@ -103,7 +103,7 @@ export default function ItemServices({ title, description, image }) {
           </div>
         </div>
       )}
-      <Image src="/bg-lawyer.jpg" alt="image-service" fill={true} />
+      <Image src={image} alt="image-service" fill={true} />
     </section>
   );
 }

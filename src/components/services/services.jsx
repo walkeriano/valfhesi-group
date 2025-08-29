@@ -21,25 +21,25 @@ export default function Services({ id }) {
       id: 1,
       title: "Corporativo",
       description: "Creamos sitios web modernos y optimizados para SEO.",
-      image: "/bg-lawyer.jpg",
+      image: "/service-4.jpg",
     },
     {
       id: 2,
       title: "Penal",
       description: "Campañas efectivas en Google Ads y redes sociales.",
-      image: "/bg-lawyer.jpg",
+      image: "/service-3.jpg",
     },
     {
       id: 3,
       title: "Judicial",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
-      image: "/bg-lawyer.jpg",
+      image: "/service-2.jpg",
     },
     {
       id: 4,
       title: "Civil",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
-      image: "/bg-lawyer.jpg",
+      image: "/service-1.jpg",
     },
   ];
 

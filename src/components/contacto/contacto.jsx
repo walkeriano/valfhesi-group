@@ -12,6 +12,7 @@ import {
   faPhoneVolume,
   faEnvelope,
   faTriangleExclamation,
+  faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -72,8 +73,10 @@ export default function Contacto({ id }) {
 
     if (res.success) {
       setIsSuccess(true);
-      // Resetea el formulario después de un tiempo
+
+      // Ocultar mensaje a los 3s
       setTimeout(() => {
+        // Resetear el formulario antes (o después, como prefieras)
         formRef.current.reset();
         setIsSuccess(false);
       }, 3000);
@@ -85,17 +88,18 @@ export default function Contacto({ id }) {
   };
 
   return (
-    <section  id={id} className={styles.containerContact}>
+    <section id={id} className={styles.containerContact}>
       <section ref={formShow} className={styles.formContainer}>
         <span></span>
+
         {isSuccess && (
           <div className={styles.successMessage}>
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
-              icon={faTriangleExclamation}
+              icon={faCalendarCheck}
             />
-            <p>¡Gracias! Tu mensaje ha sido enviado con éxito</p>
+            <p>¡Gracias! Tus datos fueron enviados con exito</p>
           </div>
         )}
         {errorMessage && (
@@ -114,7 +118,7 @@ export default function Contacto({ id }) {
               canáles de <span>contacto</span>
             </h3>
             <p className={styles.p}>Envíanos tus datos y te contactaremos</p>
-            <form  ref={formShow} onSubmit={onSubmit} className={styles.formBox}>
+            <form ref={formRef} onSubmit={onSubmit} className={styles.formBox}>
               <section className={styles.boxInputs}>
                 <div className={styles.itemsInputs}>
                   <label htmlFor="">
