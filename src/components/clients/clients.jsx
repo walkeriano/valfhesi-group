@@ -1,7 +1,5 @@
 import styles from "./clients.module.css";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Clients() {
   return (
@@ -11,43 +9,52 @@ export default function Clients() {
       </h2>
       <p>nacionales e internacionales</p>
       <section className={styles.flexClients}>
-        <div className={styles.item}>
-          <Image src="/plaza-vea.jpg" alt="logo-cliente" fill={true} />
+                <div className={styles.sliderTrack}>
+          <div className={styles.item}>
+            <Image src="/plaza-vea.jpg" alt="logo-plaza-vea" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-01.png" alt="logo-01" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-02.png" alt="logo-02" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-03.png" alt="logo-03" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-04.png" alt="logo-04" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-05.png" alt="logo-05" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-06.png" alt="logo-06" fill />
+          </div>
+
+          {/* Duplicado para el loop infinito */}
+          <div className={styles.item}>
+            <Image src="/plaza-vea.jpg" alt="logo-plaza-vea" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-01.png" alt="logo-01" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-02.png" alt="logo-02" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-03.png" alt="logo-03" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-04.png" alt="logo-04" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-05.png" alt="logo-05" fill />
+          </div>
+          <div className={styles.item}>
+            <Image src="/client-06.png" alt="logo-06" fill />
+          </div>
         </div>
-        <div className={styles.item}>
-          <Image src="/client-01.png" alt="logo-cliente" fill={true} />
-        </div>
-        <div className={styles.item}>
-          <Image src="/client-02.png" alt="logo-cliente" fill={true} />
-        </div>
-        <div className={styles.item}>
-          <Image src="/client-03.png" alt="logo-cliente" fill={true} />
-        </div>
-        <div className={styles.item}>
-          <Image src="/client-04.png" alt="logo-cliente" fill={true} />
-        </div>
-        <div className={styles.item}>
-          <Image src="/client-05.png" alt="logo-cliente" fill={true} />
-        </div>
-        <div className={styles.item}>
-          <Image src="/client-06.png" alt="logo-cliente" fill={true} />
-        </div>
-      </section>
-      <section className={styles.flexBtn}>
-        <button>
-          <FontAwesomeIcon
-            className={styles.icon}
-            size="2x"
-            icon={faArrowRight}
-          />
-        </button>
-        <button>
-          <FontAwesomeIcon
-            className={styles.icon}
-            size="2x"
-            icon={faArrowRight}
-          />
-        </button>
       </section>
     </section>
   );
