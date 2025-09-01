@@ -29,21 +29,23 @@
   background: linear-gradient(rgba(255, 255, 255, 0), white);
   padding-bottom: 25px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .infoItem h3 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: black;
-  font-weight: 700;
-  width: 100%;
+  font-weight: 500;
+  width: 80%;
   text-align: center;
+  margin-bottom: 5px;
 }
 
-.iconTwo{
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+.iconTwo {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
 .item:hover {
@@ -54,21 +56,18 @@
   background: linear-gradient(#ff6a0000, #ff6a00);
 }
 
-.item:hover .infoItem h3  {
+.item:hover .infoItem h3 {
   color: white;
 }
 
-.item:hover .infoItem .iconTwo{
-    color: white;
+.item:hover .infoItem .iconTwo {
+  color: white;
 }
-
-
-
 
 .infoItem button {
   border: none;
-  background-color: #ff6a00;
-  height: 40px;
+  background: linear-gradient(to Top, #ff5e00, #f6ae00);
+  height: 35px;
   color: white;
   padding: 0px 15px;
   border-radius: 50px;
@@ -76,41 +75,52 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  cursor: pointer;
 }
 
-.infoItem button p{
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.infoItem button p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.infoItem button .icon{
-    font-size: 1rem;
-    transform: rotate(-45deg);
+.infoItem button .icon {
+  font-size: 1rem;
+  transform: rotate(-45deg);
 }
 
-
-.item:hover .infoItem  button{
-    background-color: white;
-    color: #ff6a00;
-}   
-
-
-@media (max-width: 850px){
-  .item {
-  width: 100%;
-  height: 50vh;
+.item:hover .infoItem button {
+  background: linear-gradient(to Top, white, white);
+  color: #ff6a00;
 }
 
-.item:hover {
-  width: 100%;
-}
-
-.item img {
+.containerShow {
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50px 50px 0px 0px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.848);
+  color: white;
+  z-index: 10000;
 }
 
+@media (max-width: 850px) {
+  .item {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .item:hover {
+    width: 100%;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px 50px 0px 0px;
+  }
+}

@@ -41,14 +41,32 @@
     height: 130px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 35px;
+    justify-content: flex-start;
+    gap: 5vw;
     margin: 25px 0px;
+    padding:0px 10%;
+    overflow-x: scroll;
+    transition: 0.5s ease;
 }
+
+.flexClients::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.flexClients::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.flexClients::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 
 .item{
     position: relative;
-    width: 17%;
+    min-width: 23%;
     height: 100%;
 }
 

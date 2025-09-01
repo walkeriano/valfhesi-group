@@ -1,0 +1,73 @@
+.containerPresentation {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient( to Left, #ff5e00, #f6ae00);
+}
+
+.imgBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+  border-radius: 35px 0px 0px 35px;
+  border-left: 3px solid #f6ae00;
+}
+
+.infoPerson {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datosPerson{
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.datosPerson p{
+    width: 100%;
+    font-size: 2.3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.datosPerson p span{
+    font-weight: 900;
+}
+
+.datosPerson h2{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.datosPerson h3{
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

@@ -1,16 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./itemServices.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ItemServices({ title, description, image }) {
-  const [change, setChange] = useState(true);
+export default function ItemServices({ title, image }) {
   const el = useRef(null);
 
   useEffect(() => {
@@ -62,47 +61,27 @@ export default function ItemServices({ title, description, image }) {
 
   return (
     <section className={styles.item}>
-      {change ? (
-        <div className={styles.infoItem}>
-          <h3>{title}</h3>
+      <Link
+        href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.infoItem}
+      >
+        <h3>{title}</h3>
+        <FontAwesomeIcon
+          className={styles.iconTwo}
+          size="2x"
+          icon={faChevronDown}
+        />
+        <button>
+          <p>reservar</p>
           <FontAwesomeIcon
-            className={styles.iconTwo}
+            className={styles.icon}
             size="2x"
-            icon={faChevronDown}
+            icon={faArrowRight}
           />
-          <button onClick={()=>setChange(false)}>
-            <p>ver más</p>
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faArrowRight}
-            />
-          </button>
-        </div>
-      ) : (
-        <div   className={styles.containerShow}>
-          <h2>{title}</h2>
-          <h3>{description}</h3>
-          <div className={styles.containerBtns}>
-            <button className={styles.mini} onClick={() => setChange(true)}>
-              <p>Minimizar</p>
-              <FontAwesomeIcon
-                className={styles.icon}
-                size="2x"
-                icon={faArrowRight}
-              />
-            </button>
-            <button className={styles.contact}>
-              <p>Reservar reunión</p>
-              <FontAwesomeIcon
-                className={styles.icon}
-                size="2x"
-                icon={faWhatsapp}
-              />
-            </button>
-          </div>
-        </div>
-      )}
+        </button>
+      </Link>
       <Image src={image} alt="image-service" fill={true} />
     </section>
   );

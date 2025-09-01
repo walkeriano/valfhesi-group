@@ -19,27 +19,39 @@ export default function Services({ id }) {
   const services = [
     {
       id: 1,
-      title: "Corporativo",
+      title: "Derecho Administrativo",
       description: "Creamos sitios web modernos y optimizados para SEO.",
       image: "/service-4.jpg",
     },
     {
       id: 2,
-      title: "Penal",
+      title: "Derecho Municipal",
       description: "Campañas efectivas en Google Ads y redes sociales.",
-      image: "/service-3.jpg",
+      image: "/service-5.jpg",
     },
     {
       id: 3,
-      title: "Judicial",
+      title: "Derecho Civil",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
-      image: "/service-2.jpg",
+      image: "/service-1.jpg",
     },
     {
       id: 4,
-      title: "Civil",
+      title: "Derecho Registral",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
-      image: "/service-1.jpg",
+      image: "/service-6.jpg",
+    },
+    {
+      id: 5,
+      title: "Ingeniería",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/service-7.jpg",
+    },
+        {
+      id: 6,
+      title: "Topografía y Construcción",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/service-8.jpg",
     },
   ];
 

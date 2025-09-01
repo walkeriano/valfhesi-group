@@ -57,7 +57,7 @@
   padding: 0px 15px;
   border-radius: 50px;
   border: 2px solid transparent;
-  background-color: #ff6a00;
+  background: linear-gradient(to Left, #ff5e00, #f6ae00);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -78,7 +78,7 @@
 }
 
 .containerCalltoAction .btnContact:hover {
-  background-color: white;
+  background: linear-gradient(to Left, white, white);
   color: #ff6a00;
   border: 2px solid #ff6a00;
 }
@@ -120,7 +120,7 @@
   background-color: white;
 }
 
-.containerShow{
+.containerShow {
   border: 1px solid red;
   position: absolute;
   z-index: 1000;
@@ -128,17 +128,15 @@
   height: 100%;
 }
 
+@media (max-width: 850px) {
+  .titleText h2 {
+    font-size: 8.2vw;
+  }
 
-@media (max-width: 850px){
-
-.titleText h2 {
-  font-size: 8.2vw;
-}
-
-.flexItems {
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
-}
+  .flexItems {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

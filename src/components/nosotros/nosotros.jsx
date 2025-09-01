@@ -11,17 +11,32 @@ import Link from "next/link";
 
 export default function Nosotros({ id }) {
   return (
-    <section  id={id} className={styles.containerNosotros}>
+    <section id={id} className={styles.containerNosotros}>
       <section className={styles.containerTexto}>
-        <Image src="log-white.svg" alt="logo-white-version" width={300} height={75} />
+        <Image
+          src="log-white.svg"
+          alt="logo-white-version"
+          width={300}
+          height={75}
+        />
         <section className={styles.generalInfo}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essen
+            Valfhesi Group SAC es una empresa 100% peruana, con más de doce años
+            de trayectoria, nacida con una clara vocación innovadora,
+            especializada en brindar un servicio integral y personalizado en el
+            ámbito jurídico enfocado en la asesoría y consultoría Empresarial,
+            teniendo como principales campos de desarrollo los siguientes:
+            Derecho de la Empresa, Derecho Civil, Derecho Administrativo,
+            Derecho Municipal, y Derecho Registral.
+          </p>
+          <p>
+            Contamos con un equipo de abogados especialistas en las citadas
+            materias, así como profesionales de diversas áreas complementarias
+            para gestiones municipales y registrales, entre las que destacan la
+            Ingeniería Civil, Arquitectura, Ingeniería eléctrica, Ingeniería
+            Sanitaria, contando con profesionales que se encuentran altamente
+            capacitados y comprometidos con desarrollar y entregar resultados de
+            calidad y valor a nuestros clientes.
           </p>
           <section className={styles.containerCalltoAction}>
             <Link

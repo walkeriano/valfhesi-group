@@ -12,6 +12,9 @@ export default function Clients() {
       <p>nacionales e internacionales</p>
       <section className={styles.flexClients}>
         <div className={styles.item}>
+          <Image src="/plaza-vea.jpg" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
           <Image src="/client-01.png" alt="logo-cliente" fill={true} />
         </div>
         <div className={styles.item}>
@@ -22,6 +25,12 @@ export default function Clients() {
         </div>
         <div className={styles.item}>
           <Image src="/client-04.png" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
+          <Image src="/client-05.png" alt="logo-cliente" fill={true} />
+        </div>
+        <div className={styles.item}>
+          <Image src="/client-06.png" alt="logo-cliente" fill={true} />
         </div>
       </section>
       <section className={styles.flexBtn}>
