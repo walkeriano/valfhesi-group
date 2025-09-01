@@ -47,7 +47,7 @@ export default function Services({ id }) {
       description: "Te ayudamos a escalar tu negocio con tecnología.",
       image: "/service-7.jpg",
     },
-        {
+    {
       id: 6,
       title: "Topografía y Construcción",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
@@ -96,32 +96,37 @@ export default function Services({ id }) {
               icon={faArrowRight}
             />
           </a>
-          <Link
-            className={styles.links}
-            href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faWhatsapp}
-            />
-          </Link>
-          <Link className={styles.links} href="tel:+51950856453">
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faPhoneVolume}
-            />
-          </Link>
-          <Link className={styles.links} href="mailto: contacto@goskating.com">
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faEnvelope}
-            />
-          </Link>
+          <section className={styles.btnContactGeneral}>
+            <Link
+              className={styles.links}
+              href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faWhatsapp}
+              />
+            </Link>
+            <Link className={styles.links} href="tel:+51950856453">
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faPhoneVolume}
+              />
+            </Link>
+            <Link
+              className={styles.links}
+              href="mailto: contacto@goskating.com"
+            >
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faEnvelope}
+              />
+            </Link>
+          </section>
         </section>
       </section>
       <section className={styles.flexItems}>

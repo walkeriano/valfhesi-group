@@ -71,3 +71,57 @@
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+
+@media (max-width: 850px){
+  .containerPresentation {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+
+.imgBox {
+  width: 100%;
+  height: 50vh
+}
+
+.imgBox img {
+  border-radius: 35px 35px 0px 0px;
+}
+
+.infoPerson {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+
+.datosPerson{
+    width: 85%;
+    height: auto;
+}
+
+.datosPerson p{
+    width: 100%;
+    font-size: 2rem;
+}
+
+.datosPerson p span{
+    font-weight: 900;
+}
+
+.datosPerson h2{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.datosPerson h3{
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+}

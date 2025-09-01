@@ -120,21 +120,22 @@
   .containerNosotros {
     background-color: rgba(0, 0, 0, 0.906);
     width: 100vw;
-    height: 125vh;
-    display: flex;
+    height: auto;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     color: white;
     position: relative;
     padding-top: 100px;
+    gap: 70px;
   }
 
   .imgBox {
-    position: absolute;
+    position: relative;
     left: auto;
     bottom: 0px;
     width: 100%;
-    height: 55%;
+    height: 55vh;
   }
 
   .containerTexto {

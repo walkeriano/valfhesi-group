@@ -107,10 +107,6 @@
   font-size: 1.4rem;
 }
 
-.containerCalltoAction .links:nth-child(2) .icon {
-  font-size: 1.7rem;
-}
-
 .flexItems {
   width: 100%;
   height: 80vh;
@@ -128,6 +124,16 @@
   height: 100%;
 }
 
+.btnContactGeneral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnContactGeneral .links:nth-child(1) .icon {
+  font-size: 1.7rem;
+}
+
 @media (max-width: 850px) {
   .titleText h2 {
     font-size: 8.2vw;
@@ -138,5 +144,28 @@
     height: auto;
     flex-direction: column;
     justify-content: center;
+    gap: 50px;
+  }
+
+  .containerCalltoAction {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .containerCalltoAction .btnContact {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .containerCalltoAction .links {
+    width: 60px;
+  }
+
+  .containerCalltoAction .links .icon {
+    font-size: 1.9rem;
+  }
+
+  .btnContactGeneral .links:nth-child(1) .icon {
+    font-size: 2.7rem;
   }
 }
