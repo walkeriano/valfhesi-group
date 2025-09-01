@@ -62,7 +62,7 @@ export default function ItemServices({ title, image }) {
   return (
     <section className={styles.item}>
       <Link
-        href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+        href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.infoItem}
