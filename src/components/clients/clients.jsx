@@ -23,13 +23,7 @@ export default function Clients() {
             <Image src="/client-04.png" alt="logo-04" fill />
           </div>
           <div className={styles.item}>
-            <Image src="/client-01.png" alt="logo-01" fill />
-          </div>
-          <div className={styles.item}>
             <Image src="/client-02.png" alt="logo-02" fill />
-          </div>
-          <div className={styles.item}>
-            <Image src="/client-03.png" alt="logo-03" fill />
           </div>
           
 
@@ -38,22 +32,16 @@ export default function Clients() {
             <Image src="/plaza-vea.jpg" alt="logo-plaza-vea" fill />
           </div>
           <div className={styles.item}>
-            <Image src="/client-01.png" alt="logo-01" fill />
+            <Image src="/client-05.png" alt="logo-05" fill />
           </div>
           <div className={styles.item}>
-            <Image src="/client-02.png" alt="logo-02" fill />
-          </div>
-          <div className={styles.item}>
-            <Image src="/client-03.png" alt="logo-03" fill />
+            <Image src="/client-06.png" alt="logo-06" fill />
           </div>
           <div className={styles.item}>
             <Image src="/client-04.png" alt="logo-04" fill />
           </div>
           <div className={styles.item}>
-            <Image src="/client-05.png" alt="logo-05" fill />
-          </div>
-          <div className={styles.item}>
-            <Image src="/client-06.png" alt="logo-06" fill />
+            <Image src="/client-02.png" alt="logo-02" fill />
           </div>
         </div>
       </section>
