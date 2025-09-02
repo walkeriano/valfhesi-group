@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./itemServices.module.css";
@@ -10,8 +10,9 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ItemServices({ title, image }) {
+export default function ItemServices({ title, image, description }) {
   const el = useRef(null);
+  const [change, setChange] = useState(true);
 
   useEffect(() => {
     const element = el.current;
@@ -62,36 +63,72 @@ export default function ItemServices({ title, image }) {
 
   return (
     <section className={styles.item}>
-      <section className={styles.infoItem}>
-        <h3>{title}</h3>
-        <FontAwesomeIcon
-          className={styles.iconTwo}
-          size="2x"
-          icon={faChevronDown}
-        />
-        <section className={styles.boxBtns}>
-          <button>
-            <p>ver más</p>
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faArrowRight}
-            />
-          </button>
-          <Link
-            href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>reservar</p>
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faWhatsapp}
-            />
-          </Link>
+      {change ? (
+        <section className={styles.infoItem}>
+          <h3>{title}</h3>
+          <FontAwesomeIcon
+            className={styles.iconTwo}
+            size="2x"
+            icon={faChevronDown}
+          />
+          <section className={styles.boxBtns}>
+            <button onClick={() => setChange(false)}>
+              <p>ver más</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faArrowRight}
+              />
+            </button>
+            <Link
+              href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>reservar</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faWhatsapp}
+              />
+            </Link>
+          </section>
         </section>
-      </section>
+      ) : (
+        <section className={styles.showOn}>
+          <div className={styles.infoGeneral}>
+            <h3>{title}</h3>
+            <ul>
+              {description.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+          <section className={styles.boxBtns}>
+            <button onClick={() => setChange(true)}>
+              <p>Minimizar</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faArrowRight}
+              />
+            </button>
+            <Link
+              href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>reservar</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faWhatsapp}
+              />
+            </Link>
+          </section>
+        </section>
+      )}
+
       <Image src={image} alt="image-service" fill={true} />
     </section>
   );
