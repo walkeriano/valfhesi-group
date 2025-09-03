@@ -126,6 +126,14 @@ export default function ItemServices({ title, image, description }) {
               />
             </Link>
           </section>
+          <div className={styles.containImage}>
+            <Image
+              src="/bg-ave-contact.png"
+              alt="bg-image"
+              fill
+              className={styles.imgBgShow}
+            />
+          </div>
         </section>
       )}
 
