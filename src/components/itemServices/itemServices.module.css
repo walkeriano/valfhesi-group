@@ -1,7 +1,6 @@
 .item {
   width: 100%;
   height: 80vh;
-  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +13,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0px 0px 30px 30px;
 }
 
 .infoItem {
@@ -55,7 +53,6 @@
 
 .item:hover .infoItem {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(33, 33, 33, 0.834));
-  border-radius: 0px 0px 30px 30px;
 }
 
 .item:hover .infoItem h3 {
