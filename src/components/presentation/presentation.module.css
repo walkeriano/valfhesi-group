@@ -109,12 +109,12 @@
     height: auto;
 }
 
-.datosPerson p{
+.datosPerson h4{
     width: 100%;
     font-size: 2rem;
 }
 
-.datosPerson p span{
+.datosPerson h4 span{
     font-weight: 900;
 }
 
