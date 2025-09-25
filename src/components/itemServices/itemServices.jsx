@@ -81,7 +81,7 @@ export default function ItemServices({ title, image, description }) {
               />
             </button>
             <Link
-              href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              href="https://wa.me/51949273157?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -114,7 +114,7 @@ export default function ItemServices({ title, image, description }) {
               />
             </button>
             <Link
-              href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              href="https://wa.me/51949273157?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
               target="_blank"
               rel="noopener noreferrer"
             >

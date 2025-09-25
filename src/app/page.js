@@ -40,11 +40,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:title"
-          content="SB - Consultores Corporativos - Asesoría y Consultoría Corporativa legal"
+          content="Valfhesi Group - Asesoría y Consultoría Corporativa legal"
         />
         <meta
           property="og:description"
-          content="asesoría legal, estudio de abogados, abogados, consultoría legal, derecho administrativo, protección al consumidor, derecho municipal, derecho penal, derecho laboral, derecho corporativo, derecho civil, derecho de familia, derecho registral."
+          content="Valfhesi Group, Asesoría legal, estudio de abogados, abogados, consultoría legal, derecho administrativo, protección al consumidor, derecho municipal, derecho penal, derecho laboral, derecho corporativo, derecho civil, derecho de familia, derecho registral."
         />
         <meta property="og:url" content="https://valfhesigroup.com.pe" />
         <meta property="og:type" content="https://valfhesigroup.com.pe" />

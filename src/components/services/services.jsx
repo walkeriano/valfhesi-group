@@ -133,7 +133,7 @@ export default function Services({ id }) {
         <section className={styles.containerCalltoAction}>
           <a
             className={styles.btnContact}
-            href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+            href="https://wa.me/51949273157?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -147,7 +147,7 @@ export default function Services({ id }) {
           <section className={styles.btnContactGeneral}>
             <Link
               className={styles.links}
-              href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              href="https://wa.me/51949273157?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -157,7 +157,7 @@ export default function Services({ id }) {
                 icon={faWhatsapp}
               />
             </Link>
-            <Link className={styles.links} href="tel:+51957839801">
+            <Link className={styles.links} href="tel:+51949273157">
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
