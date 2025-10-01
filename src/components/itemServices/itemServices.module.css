@@ -63,17 +63,19 @@
   color: white;
 }
 
-.boxBtns {
+.boxBtns, .boxBtnsTwo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 85%;
   gap: 10px;
   z-index: 10000;
 }
 
 .boxBtns button,
-.boxBtns a {
+.boxBtns a,
+.boxBtnsTwo button,
+.boxBtnsTwo a{
   border: none;
   background: linear-gradient(to Top, #ff5e00, #f6ae00);
   height: 35px;
@@ -85,26 +87,52 @@
   justify-content: center;
   gap: 5px;
   cursor: pointer;
-}
-
-.boxBtns a {
-  background: linear-gradient(to Top, #008a1c, #00bc26);
   text-decoration: none;
 }
 
+.boxBtnsTwo button{
+  background: linear-gradient(to Top, transparent, transparent);
+  border: 2px solid white;
+}
+
+.boxBtns a{
+  background: linear-gradient(to Top, green, rgb(0, 169, 0));
+}
+
+.boxBtnsTwo a {
+  background: linear-gradient(to Top, #ffffff, #e7e7e7);
+  text-decoration: none;
+  border: 2px solid white;
+}
+
 .boxBtns button p,
-.boxBtns a p {
+.boxBtns a p,
+.boxBtnsTwo button p,
+.boxBtnsTwo a p {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.boxBtns button .icon {
+.boxBtnsTwo a p {
+  color: green;
+  font-weight: 500;
+}
+
+.boxBtns button .icon, .boxBtnsTwo button .icon {
   font-size: 1rem;
   transform: rotate(-45deg);
 }
 
-.boxBtns a .icon {
+.boxBtnsTwo button .icon{
+  transform: rotate(135deg)
+}
+
+.boxBtnsTwo a .icon{
+  color: green;
+}
+
+.boxBtns a .icon, .boxBtnsTwo a .icon {
   transform: rotate(0deg);
   font-size: 1.2rem;
 }
@@ -130,13 +158,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 1000;
-  border-radius: 0px 0px 30px 30px;
-  background: linear-gradient(to Bottom, #ff5e00, #f6ae00);
+  z-index: 10000;
+  background: linear-gradient(to Bottom, #ff5e00, #c07000);
 }
 
 .boxBtns button:hover,
-.boxBtns a:hover {
+.boxBtns a:hover,
+.boxBtnsTwo button:hover,
+.boxBtnsTwo a:hover {
   transform: scale(1.1);
 }
 
@@ -168,6 +197,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5px;
+  z-index: 100000;
 }
 
 .infoGeneral ul::-webkit-scrollbar {

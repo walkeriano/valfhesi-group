@@ -104,7 +104,7 @@ export default function ItemServices({ title, image, description }) {
               ))}
             </ul>
           </div>
-          <section className={styles.boxBtns}>
+          <section className={styles.boxBtnsTwo}>
             <button onClick={() => setChange(true)}>
               <p>Minimizar</p>
               <FontAwesomeIcon

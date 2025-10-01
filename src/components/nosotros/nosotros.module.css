@@ -59,10 +59,10 @@
 }
 
 .containerCalltoAction .btnContact {
-  height: 35px;
-  padding: 0px 15px;
+  height: 40px;
+  padding: 0px 20px;
   border-radius: 50px;
-  border: none;
+  border: 2px solid #ff5e00;
   background: linear-gradient(to Left, #ff5e00, #f6ae00);
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -70,7 +70,7 @@
   font-weight: 700;
   color: white;
   cursor: pointer;
-  margin-left: 10px;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@
 }
 
 .containerCalltoAction .btnContact:hover {
-  background-color: white;
+  background: linear-gradient(to Left, #ffffff, #dadada);
   color: #ff6a00;
 }
 

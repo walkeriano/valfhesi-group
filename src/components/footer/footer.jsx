@@ -34,7 +34,7 @@ export default function Footer() {
         </section>
         <section className={styles.rightFooter}>
           <ul>
-            <li>+51 949 273 157</li>
+            <li>+51 957 839 801</li>
             <li>+511 6476537</li>
             <li>sayuri.quispe@valfhesigroup.com.pe</li>
             <li>legal@valfhesigroup.com.pe</li>
