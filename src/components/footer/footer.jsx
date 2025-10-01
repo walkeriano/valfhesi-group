@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagram,
-  faFacebook,
+  faLinkedin,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowsUpToLine } from "@fortawesome/free-solid-svg-icons";
@@ -41,18 +40,11 @@ export default function Footer() {
             <li>Av. Arequipa N° 4130, Oficina 302, Miraflores</li>
           </ul>
           <div className={styles.socialMediaFooter}>
-            <Link href="/" className={styles.btnSocial}>
+            <Link href="https://www.linkedin.com/company/valfhesi-group-sac/posts/?feedView=all" className={styles.btnSocial}>
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
-                icon={faInstagram}
-              />
-            </Link>
-            <Link href="/" className={styles.btnSocial}>
-              <FontAwesomeIcon
-                className={styles.icon}
-                size="2x"
-                icon={faFacebook}
+                icon={faLinkedin}
               />
             </Link>
             <Link

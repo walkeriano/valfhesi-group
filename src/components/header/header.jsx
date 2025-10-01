@@ -6,7 +6,7 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -41,18 +41,11 @@ export default function Header() {
         <li onClick={() => scrollToSection("services")}>servicios</li>
         <li onClick={() => scrollToSection("contacto")}>contacto</li>
         <div className={styles.flexSocialMedia}>
-          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+          <Link href="https://www.linkedin.com/company/valfhesi-group-sac/posts/?feedView=all" target="_blank" className={styles.linkIcon}>
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
-              icon={faInstagram}
-            />
-          </Link>
-          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faFacebook}
+              icon={faLinkedin}
             />
           </Link>
         </div>
@@ -70,18 +63,18 @@ export default function Header() {
             <li onClick={() => scrollToSection("services")}>servicios</li>
             <li onClick={() => scrollToSection("contacto")}>contacto</li>
             <div className={styles.flexSocialMedia}>
-              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+              <Link href="https://www.linkedin.com/company/valfhesi-group-sac/posts/?feedView=all" target="_blank" className={styles.linkIcon}>
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
                   icon={faInstagram}
                 />
               </Link>
-              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+              <Link href="https://www.linkedin.com/company/valfhesi-group-sac/posts/?feedView=all" target="_blank" className={styles.linkIcon}>
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faFacebook}
+                  icon={faLinkedin}
                 />
               </Link>
             </div>
